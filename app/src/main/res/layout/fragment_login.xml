@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+   <!-- USED CONSTRAINTLAYOUT TO AVOID HAVING TO MAKE MULTIPLE LINEAR LAYOUTS FOR
+    EACH FIELD AND BUTTONS-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,20 +32,20 @@
             android:id="@+id/password_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="380dp"
             android:fontFamily="@font/roboto_mono"
             android:text="@string/password"
             android:textSize="24sp"
+            android:labelFor="@id/editTextTextPassword"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/email_label"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmail"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/editTextTextEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:autofillHints="@string/Email"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,6 +58,7 @@
             android:layout_marginTop="2dp"
             android:ems="10"
             android:inputType="textPassword"
+            android:autofillHints="@string/password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
