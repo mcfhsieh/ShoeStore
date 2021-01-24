@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    USED COORDINATOR LAYOUT HERE BC THE FAB IS EASIER TO PLACE
+    AND ONLY HAVE ONE MAIN ELEMENT IN SCROLLVIEW. LINEAR LAYOUT FOR THE
+    CONTAINER OF SHOE ITEMS BC ITS A SIMPLE VERTICAL LAYOUT-->
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"

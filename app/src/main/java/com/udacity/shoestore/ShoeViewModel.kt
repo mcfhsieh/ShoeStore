@@ -26,13 +26,4 @@ class ShoeViewModel: ViewModel(){
         shoeCreated.value = true
         shoeSize = ""
     }
-
-/*    fun getNewShoe(): Shoe{
-        var name = shoeName
-        var company = shoeCompany
-        var size = shoeSize.toDouble()
-        var description = shoeDescription
-        var shoe = Shoe(name, size, company, description)
-        return shoe
-    }*/
 }

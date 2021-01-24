@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     >
-
+    <!--    SINCE ALL ELEMENTS IN THIS LAYOUT ARE IN A VERTICAL ORIENTATION-->
+    <!--    I DECIDED TO USE LINEAR LAYOUT-->
     <data>
         <variable
             name="viewModel"
